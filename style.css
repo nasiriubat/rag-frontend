@@ -1,0 +1,217 @@
+body {
+    background: linear-gradient(to right, #e1a8a3, #918ae4);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.main {
+    display: flex;
+    ;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 3;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    background-color: rgba(128, 137, 236, 0.8);
+    width: 25%;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+    /* overflow-y: scroll; */
+}
+
+#sidebar .logo {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 10%;
+
+}
+
+#sidebar .logo .info-button {
+    color: #fffaf9;
+    font-size: 1.5rem;
+    padding-top: 0;
+}
+#sidebar .logo h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.sidebar-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    
+}
+#sidebar h4 {
+    font-size: 1.2rem;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    /* overflow: scroll; */
+}
+
+#sidebar ul li {
+    color: rgb(221, 221, 221);
+    padding: 10px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#sidebar ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-left: 10px;
+}
+
+/* Main Content Styles */
+#main-content {
+    padding: 20px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Demo Questions Cards */
+
+
+
+
+
+
+/* Chatbox and Input Area */
+.chatbox {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+.chat-area {
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* For Firefox */
+}
+
+.chat-area::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Edge */
+}
+
+.chat-area .message {
+    margin-bottom: 10px;
+    background: rgba(46, 64, 255, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    color: white;
+}
+
+.chat-area .message.user {
+    background: rgba(255, 255, 255, 0.3);
+    margin-left: auto;
+    color: black;
+}
+
+.input-group {
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+}
+.top-bar{
+    text-align: right !important;
+    color: white;
+}
+
+.input-group input {
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+.input-group button {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 1.2rem;
+}
+
+/* Info Button */
+#menu-toggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-left: 1rem;
+    display: none;
+}
+.footer {
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;;
+    color: white;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.modal-content {
+    background-color: rgba(46, 64, 255, 0.9);
+    color: rgb(0, 0, 0);
+}
+
+/* Responsive Styles */
+/* Media query for smaller screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .top-bar{
+        text-align: left !important;
+    }
+    #sidebar {
+        transition: all 0.3s ease;
+        display: none; /* Initially hidden */
+        width: 80%; /* 80% width for the sidebar when shown */
+        position: fixed; /* Overlay the content */
+        height: 100%; /* Full height */
+        top: 0; /* Stick to the top */
+        left: 0; /* Stick to the left */
+        background-color: rgb(128, 137, 236);
+        z-index: 999; /* Ensure it is above other content */
+    }
+
+    #main-content {
+        width: 100%; /* Full width of the main content */
+    }
+
+    #menu-toggle {
+        display: block; /* Ensure the toggle button is visible */
+    }
+}

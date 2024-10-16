@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskGPT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="logo">
+                <h2>AskGPT</h2>
+                <button id="infoButton" class="btn info-button">
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+            <div class="">
+                <h4>Frequently Asked questions</h4>
+                <hr>
+            </div>
+            <ul>
+                <li>What is GPT?</li>
+                <li>How does it work?</li>
+                <li>Common uses</li>
+                <li>Data & Security</li>
+            </ul>
+
+            <div class="footer">
+                <p>AskGPT &copy; 2021</p>
+            </div>
+        </nav>
+        <div id="main-content">
+            <!-- Chat Area -->
+            <div class="top-bar mb-2">
+                <h3 class="">Tampere University</h3>
+            </div>
+            <div class="chatbox">
+                <div class="chat-area">
+                    <div class="message">Hello! How can I assist you today?</div>
+                    <div class="message user">What is GPT?</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                    <div class="message">GPT is a language model developed by OpenAI...</div>
+                </div>
+
+                <!-- Input and Send Button -->
+                <div class="input-group p-1">
+                    <input type="text" class="form-control" id="chatInput" placeholder="Type your message here...">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" id="sendButton" type="button"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <button id="menu-toggle" class=""><i class="fa-solid fa-bars"></i></button>
+
+    <!-- Modal for Info -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">What is the source?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>AskGPT is a chatbot application powered by advanced AI models like GPT. You can ask questions
+                        from different domains, including AI, programming, and more!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
